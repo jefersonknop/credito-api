@@ -10,6 +10,8 @@ import org.hibernate.annotations.GenericGenerator;
 
 
 
+
+
 @Entity
 public class Cliente{
 	
