@@ -12,7 +12,7 @@ import app.entities.Proposta;
 
 public interface PropostaRepository extends JpaRepository<Proposta, Long> {	
 	
-	@Query(value = "SELECT * FROM PROPOSTA P JOIN CLIENTE C ON P.CLINTE = C.ID WHERE C.CPF =?1", nativeQuery = true)	  
+	@Query(value = "SELECT * FROM PROPOSTA P JOIN CLIENTE C ON P.CLIENTE = C.ID WHERE C.CPF =?1", nativeQuery = true)	  
 	List<Proposta> findByCpfCliente(String cpf);
 	
 	

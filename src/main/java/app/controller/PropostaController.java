@@ -125,7 +125,7 @@ public class PropostaController {
 
 	
 	
-	@GetMapping("/cpf/{id}")
+	@GetMapping("/cliente/{cpf}")
 	public @ResponseBody List<Proposta> findByCpfCliente (@PathVariable String cpf){
 		return this.propostaRepository.findByCpfCliente(cpf);		
 					
